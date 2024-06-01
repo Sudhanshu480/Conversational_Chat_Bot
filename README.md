@@ -2,6 +2,14 @@
 
 Welcome to the Conversational Bot with Chat History project. This Streamlit-based application leverages the power of Google's Generative AI to provide a conversational interface, allowing users to interact with an AI model and receive responses in real-time. The bot keeps track of the conversation history, making the interaction more natural and coherent.
 
+# This is how it looks like intially. 
+![WhatsApp Image 2024-06-01 at 09 41 33_33e00a4e](https://github.com/Sudhanshu480/Conversational_Chat_Bot/assets/96736479/5c55f4a4-8e18-4c94-a806-5e8cf0804918)
+
+**Any query from the user can be answered:**
+![WhatsApp Image 2024-06-01 at 09 42 32_acb9c7fb](https://github.com/Sudhanshu480/Conversational_Chat_Bot/assets/96736479/e1a37e9b-177f-437c-9523-589283188cce)
+![WhatsApp Image 2024-06-01 at 09 43 02_801c6c1c](https://github.com/Sudhanshu480/Conversational_Chat_Bot/assets/96736479/ad6fa274-4f5e-45e3-8cc6-96761f5c1417)
+
+
 ## Features
 
 - **Real-time Conversation**: Engage in a back-and-forth conversation with the AI.
@@ -29,7 +37,8 @@ The chat history is managed using Streamlit's session state. Here’s how we do 
 - **Updating History**: Each response chunk is appended individually to the chat history. This means for a single user question, multiple "Bot Response:" entries may appear.
 - **Displaying History**: The chat history shows each chunk separately, which can make the conversation look disjointed and repetitive.
 
-![Version 1 Chat History Example](version1_chat_history_example.png)
+![WhatsApp Image 2024-06-01 at 09 44 12_365bf836](https://github.com/Sudhanshu480/Conversational_Chat_Bot/assets/96736479/1cdd2573-5e2d-4b5e-bc94-e7bd085ec7ec)
+
 
 ### Version 2: Aggregated Chunk Maintenance
 
@@ -37,13 +46,14 @@ The chat history is managed using Streamlit's session state. Here’s how we do 
 - **Updating History**: All response chunks are aggregated into a single string before appending it to the chat history. This results in a single entry for each user question.
 - **Displaying History**: The chat history shows the entire response as a single entry, making the conversation more readable and coherent.
 
-![Version 2 Chat History Example](version2_chat_history_example.png)
+![WhatsApp Image 2024-06-01 at 09 50 31_dc575dd8](https://github.com/Sudhanshu480/Conversational_Chat_Bot/assets/96736479/b4a0563f-245c-4de3-af9b-8a626be05da6)
+
 
 By using a spinner labeled "Response in Progress..." during the response generation, the application also provides visual feedback to users, enhancing the user experience by informing them that the bot is processing their query.
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.9 or higher
 - Streamlit
 - `google-generativeai` package
 - `python-dotenv` package
